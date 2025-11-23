@@ -1,0 +1,27 @@
+# Build Automation
+02_build/
+03_docs/
+05_updates/
+*.log
+
+# Windows / macOS system files
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+# IDE / Editors
+.vscode/
+.idea/
+*.code-workspace
+
+# Zip output handled manually
+*.zip
+!dist/*.zip    # allow ZIPs inside dist/
+
+# Node / Composer
+node_modules/
+vendor/
+
+# Temporary folders
+tmp/
+temp/
