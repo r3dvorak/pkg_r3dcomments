@@ -1,47 +1,47 @@
 # Changelog – R3D Comments (pkg_r3dcomments)
 
-Alle relevanten Änderungen an dieser Erweiterung werden in diesem Dokument aufgeführt.
+All relevant changes to this extension are listed in this document.
 
 ## [6.0.3] – 2025-11-22
 ### Added
-- Erste Veröffentlichung des vollständigen Joomla-Packages `pkg_r3dcomments`
-- Enthält:
-  - Komponente `com_r3dcomments`
-  - Modul `mod_r3dcomments`
-  - Update-Server-Integration
-  - SHA256-Checksummen im Update-Feed
+- Initial release of the complete Joomla package `pkg_r3dcomments`
+- Contains:
+  - Component `com_r3dcomments`
+  - Module `mod_r3dcomments`
+  - Update server integration
+  - SHA256 checksums in the update feed
 
 ### Improved
-- Diverse interne Optimierungen beim Modul-Rendering
-- YOOtheme-Kompatibilität verbessert
+- Various internal optimizations for module rendering
+- Improved YOOtheme compatibility
 
 ### Fixed
-- Kleinere Fehler in der Update-XML korrigiert
-- Stabilere PowerShell-Build- und Update-Skripte
+- Minor bugs in the update XML corrected
+- More stable PowerShell build and update scripts
 
 
 ## [6.0.2] – 2025-11-21
 ### Added
-- Modul: Erste funktionale Version mit Kommentar-Liste + Formular
+- Module: First functional version with comment list + form
 
 ### Fixed
-- Fehlerhafte MVCFactory-Initialisierung im Plugin entfernt
+- Removed incorrect MVCFactory initialization in the plugin
 
 
 ## [6.0.1] – 2025-11-20
 ### Added
-- Plugin: Kategorie-Filter implementiert
-- Debug-Ausgaben hinzugefügt zur leichteren Fehlersuche
+- Plugin: Category filter implemented
+- Debug output added for easier troubleshooting
 
 ### Fixed
-- Fehler behoben, bei dem Kommentare nicht unter Artikeln angezeigt wurden
+- Fixed bug where comments were not displayed under articles
 
 
 ## [6.0.0] – 2025-11-19
 ### Added
-- Grundversion der Komponente `com_r3dcomments`
-- Nested Replies (2 Ebenen)
-- Zitat-Funktion (Quote)
-- Kommentar-Formular mit Token
-- Frontend-Edit für Autoren
-- Administrator-Benachrichtigungen
+- Basic version of the `com_r3dcomments` component
+- Nested replies (2 levels)
+- Quote function
+- Comment form with token
+- Frontend edit for authors
+- Administrator notifications

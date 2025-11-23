@@ -1,126 +1,123 @@
 # R3D Comments (pkg_r3dcomments)
 
-R3D Comments ist eine leichte, schnelle und datenschutzfreundliche Kommentar-Erweiterung für Joomla 5 und Joomla 6.  
-Sie bietet grundlegende Kommentar-Funktionen ohne externe Dienste und ist vollständig in Joomla integrierbar.
+R3D Comments is a lightweight, fast, and privacy-friendly comment extension for Joomla 5 and Joomla 6.
+It offers basic commenting features without external services and is fully integrable with Joomla.
 
-Das Paket enthält:
-- eine eigenständige Joomla-Komponente (`com_r3dcomments`)
-- ein YOOtheme-fähiges Frontend-Modul (`mod_r3dcomments`)
-- optional ein Content-Plugin (Tag- oder Kategorie-basiert)
+The package includes:
+- a standalone Joomla component (`com_r3dcomments`)
+- a YOOtheme-compatible frontend module (`mod_r3dcomments`)
+- an optional content plugin (tag or category-based)
 
-Ideal für Webseiten, die einfache, übersichtliche und DSGVO-freundliche Kommentare benötigen.
-
----
-
-## Funktionen
-
-- **Joomla 5 & Joomla 6 kompatibel**
-- **Zwei Ebenen** (Kommentar + Antwort)
-- **Zitieren**: Markierter Kommentartext wird automatisch übernommen
-- **Kategoriefilter** (Comments nur in definierten Kategorien)
-- **YOOtheme Pro kompatibel** (Module, Dynamische Templates)
-- **Frontend-Bearbeitung** (Autor kann seinen Kommentar editieren)
-- **Benachrichtigung an Administratoren**
-- **Veröffentlichungs-Workflow** (Kommentare optional erst nach Freigabe sichtbar)
-- **Saubere Bootstrap/Uikit-freie Ausgabe für Template-Flexibilität**
-- **Update-Server integriert** (für automatische Updates im Joomla-Backend)
+Ideal for websites that need simple, clear, and GDPR-friendly comments.
 
 ---
 
-## Systemanforderungen
+## Features
 
-- PHP 8.1 oder höher
-- Joomla 5 oder Joomla 6
+- **Joomla 5 & Joomla 6 compatible**
+- **Two levels** (comment + reply)
+- **Quote**: Selected comment text is automatically copied
+- **Category filter** (comments only in defined categories)
+- **YOOtheme Pro compatible** (modules, dynamic templates)
+- **Frontend editing** (author can edit their comment)
+- **Notification to administrators**
+- **Publication workflow** (comments optionally visible only after approval)
+- **Clean Bootstrap/Uikit-free output for template flexibility**
+- **Integrated update server** (for automatic updates in the Joomla backend)
+
+---
+
+## System requirements
+
+- PHP 8.1 or higher
+- Joomla 5 or Joomla 6
 - MySQL/MariaDB
-- Optional: YOOtheme Pro für Modul-Einbindung im Builder
+- Optional: YOOtheme Pro for module integration in the builder
 
 ---
 
 ## Installation
 
-1. Laden Sie die aktuelle ZIP‐Datei aus dem Ordner `/04_dist/` herunter  
-2. Im Joomla-Backend: *Erweiterungen → Verwalten → Installieren*  
-3. Das Paket installiert:
-   - Komponente  
-   - Modul  
+1. Download the latest ZIP file from the `/04_dist/` folder.  
+2. In the Joomla backend: *Extensions → Manage → Install*.  
+3. The package installs:
+   - Component  
+   - Module  
    - (optional) Plugin  
 
-4. Aktivieren Sie das Modul **mod_r3dcomments**  
-5. Platzieren Sie es:
-   - entweder in einer Template-Position
-   - oder in YOOtheme Pro als **Module Element**
+4. Activate the **mod_r3dcomments** module  
+5. Place it:
+   - either in a template position
+   - or in YOOtheme Pro as a **Module Element**
 
-Optional: Content-Plugin aktivieren und Tag/Kategorie konfigurieren.
+Optional: Activate the content plugin and configure the tag/category.
 
 ---
 
-## Verwendung
+## Usage
 
-### Via Modul (empfohlen)
-Das Modul ist vollständig YOOtheme-kompatibel.
+### Via module (recommended)
+The module is fully YOOtheme-compatible.
 
-Einfach das Modul **mod_r3dcomments** auf Artikelseiten anzeigen.
+Simply display the **mod_r3dcomments** module on article pages.
 
-### Via Content-Plugin (optional)
-Kommentare unter Artikeln automatisch anzeigen, basierend auf:
+### Via content plugin (optional)
+Automatically display comments under articles based on:
 
-- Kategorien
+- Categories
 - Tags
 - Shortcode `{r3dcomments}`
 
 ---
 
-## Update-Server
+## Update server
 
-Das Paket enthält einen eigenen Update-Server Eintrag.  
-Updates erscheinen automatisch im Joomla-Backend.
+The package contains its own update server entry.  
+Updates appear automatically in the Joomla backend.
 
-Der Update-Feed liegt unter:  
+The update feed is located at:  
 `https://www.r3d.de/joomlaextensions/updates/pkg_r3dcomments.xml`
 
 ---
 
 ## Downloads
 
-Alle offiziellen Releases sind verfügbar im Ordner:
+All official releases are available in the folder:
 
 `/04_dist/`
 
-oder über GitHub Releases.
+or via GitHub Releases.
 
 ---
 
-## Entwicklung
+## Development
 
-### Repository-Struktur
+### Repository structure
 
 pkg_r3dcomments/
-├── 01_src/ # Installierbares Joomla-Package
-├── 02_build/ # Build-Skripte (nicht Teil des Repos)
-├── 03_docs/ # Dokumentation, Screenshots
-├── 04_dist/ # Build-Artefakte (ZIPs)
-└── 05_updates/ # Update-Feed-Generator
+├── 01_src/ # Installable Joomla package
+├── 02_build/ # Build scripts (not part of the repo)
+├── 03_docs/ # Documentation, screenshots
+├── 04_dist/ # Build artifacts (ZIPs)
+└── 05_updates/ # Update feed generator
 
-Die Ordner `02_build` und `05_updates` sind aus Sicherheitsgründen ausgeschlossen.
-
----
-
-## Lizenz
-
-GNU General Public License v2 oder später  
-Weitere Informationen in der Datei `LICENSE`.
+The folders `02_build` and `05_updates` are excluded for security reasons.
 
 ---
+
+## License
+
+GNU General Public License v2 or later  
+Further information can be found in the `LICENSE` file.
 
 ## Support
 
 Website: https://r3d.de  
-E-Mail: dev@r3d.de  
-Autor: Richard Dvořák / R3D Internet Dienstleistungen
+Email: dev@r3d.de  
+Author: Richard Dvořák / R3D Internet Services
 
 ---
 
 ## Changelog
 
-Siehe `CHANGELOG.md` im Repository.
-
+See `CHANGELOG.md` in the repository.
