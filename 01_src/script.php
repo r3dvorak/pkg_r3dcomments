@@ -1,10 +1,11 @@
 <?php
 /**
  * @package     pkg_r3dcomments
- * @version     6.0.3
+ * @version     6.0.6
  * @date        2025-11-22
+ * @copyright   Copyright (C) 2025. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  * @author      Richard Dvořák, <dev@r3d.de> - https://r3d.de
- * @license     https://www.gnu.org/licenses/agpl-3.0.txt GNU Affero General Public License, version 3 or later
  */
 
 defined('_JEXEC') or die;

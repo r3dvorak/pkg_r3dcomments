@@ -3,7 +3,7 @@
     <name>pkg_r3dcomments</name>
     <packagename>r3dcomments</packagename>
 
-    <version>6.0.3</version>
+    <version>6.0.6</version>
     <creationDate>2025-11-22</creationDate>
 
     <author>Richard Dvořák</author>
@@ -11,9 +11,7 @@
     <packager>R3D Internet Dienstleistungen</packager>
     <packagerurl>https://r3d.de</packagerurl>
 
-    <copyright>
-        Copyright (C) 2025 Richard Dvořák. All rights reserved.
-    </copyright>
+    <copyright>Copyright (C) 2025 Richard Dvořák. All rights reserved.</copyright>
     <license>GPL v2 or later</license>
 
     <description>R3D Comments – Joomla Component + Module Bundle</description>
