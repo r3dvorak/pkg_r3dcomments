@@ -11,7 +11,9 @@
     <packager>R3D Internet Dienstleistungen</packager>
     <packagerurl>https://r3d.de</packagerurl>
 
-    <copyright>Copyright (C) 2025 Richard Dvořák. All rights reserved.</copyright>
+    <copyright>
+        Copyright (C) 2025 Richard Dvořák. All rights reserved.
+    </copyright>
     <license>GPL v2 or later</license>
 
     <description>R3D Comments – Joomla Component + Module Bundle</description>
@@ -19,14 +21,22 @@
     <blockChildUninstall>true</blockChildUninstall>
 
     <files>
+        <!-- Component -->
         <file type="component" element="com_r3dcomments">com_r3dcomments.zip</file>
+
+        <!-- Site module -->
         <file type="module" element="mod_r3dcomments" client="site">mod_r3dcomments.zip</file>
     </files>
 
+    <!-- optional script -->
     <scriptfile>script.php</scriptfile>
 
+    <!-- Updateserver ANLEGEN, aber optional -->
     <updateservers>
-        <server type="extension" name="R3D Comments Updates" priority="1">
+        <server
+            type="extension"
+            name="R3D Comments Updates"
+            priority="1">
             https://www.r3d.de/joomlaextensions/updates/pkg_r3dcomments.xml
         </server>
     </updateservers>
