@@ -14,7 +14,7 @@ use Joomla\CMS\Factory;
 use Joomla\CMS\Installer\Adapter\PackageAdapter;
 use Joomla\CMS\Installer\InstallerScript;
 
-class R3dcommentsInstallerScript extends InstallerScript
+class Pkg_R3dcommentsInstallerScript extends InstallerScript
 {
     protected $minimumPhp = '8.2';
     protected $minimumJoomla = '5.0';
