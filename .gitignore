@@ -5,7 +5,8 @@
 !/01_src/
 
 # Allow all files inside 01_src
-/01_src/**
+!/01_src/**
+
 
 # Do not ignore this file
 !.gitignore
