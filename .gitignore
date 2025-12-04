@@ -10,6 +10,9 @@
 
 # Do not ignore this file
 !.gitignore
+!CHANGELOG.md
+!LICENSE
+!README.md
 
 # system files
 Thumbs.db
