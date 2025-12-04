@@ -1,27 +1,24 @@
-# Build Automation
-02_build/
-03_docs/
-05_updates/
-*.log
+# Ignore everything by default
+/*
 
-# Windows / macOS system files
+# Allow 01_src folder
+!/01_src/
+
+# Allow all files inside 01_src
+/01_src/**
+
+# Do not ignore this file
+!.gitignore
+
+# system files
 Thumbs.db
 ehthumbs.db
 .DS_Store
 
-# IDE / Editors
+# Logs
+*.log
+
+# Editor metadata
 .vscode/
 .idea/
 *.code-workspace
-
-# Zip output handled manually
-*.zip
-!dist/*.zip    # allow ZIPs inside dist/
-
-# Node / Composer
-node_modules/
-vendor/
-
-# Temporary folders
-tmp/
-temp/
