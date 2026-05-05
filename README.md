@@ -5,8 +5,9 @@ It offers basic commenting features without external services and is fully integ
 
 The package includes:
 - a standalone Joomla component (`com_r3dcomments`)
-- a YOOtheme-compatible frontend module (`mod_r3dcomments`)
-- an optional content plugin (tag or category-based)
+- a frontend module (`mod_r3dcomments`) with two render modes:
+  - `Standard / Neutral` (recommended for plain Joomla templates)
+  - `YOOtheme / UIkit` (for sites that use UIkit styling)
 
 Ideal for websites that need simple, clear, and GDPR-friendly comments.
 
@@ -18,11 +19,11 @@ Ideal for websites that need simple, clear, and GDPR-friendly comments.
 - **Two levels** (comment + reply)
 - **Quote**: Selected comment text is automatically copied
 - **Category filter** (comments only in defined categories)
-- **YOOtheme Pro compatible** (modules, dynamic templates)
+- **Works with standard Joomla template positions** (for example `bottom-a`)
 - **Frontend editing** (author can edit their comment)
 - **Notification to administrators**
 - **Publication workflow** (comments optionally visible only after approval)
-- **Clean Bootstrap/Uikit-free output for template flexibility**
+- **Template-neutral output path** (`Standard / Neutral`) for template flexibility
 - **Integrated update server** (for automatic updates in the Joomla backend)
 
 ---
@@ -32,7 +33,7 @@ Ideal for websites that need simple, clear, and GDPR-friendly comments.
 - PHP 8.1 or higher
 - Joomla 5 or Joomla 6
 - MySQL/MariaDB
-- Optional: YOOtheme Pro for module integration in the builder
+- Optional: YOOtheme Pro for module embedding in the builder
 
 ---
 
@@ -43,30 +44,26 @@ Ideal for websites that need simple, clear, and GDPR-friendly comments.
 3. The package installs:
    - Component  
    - Module  
-   - (optional) Plugin  
 
 4. Activate the **mod_r3dcomments** module  
-5. Place it:
-   - either in a template position
-   - or in YOOtheme Pro as a **Module Element**
-
-Optional: Activate the content plugin and configure the tag/category.
+5. Place it in a template position (for example `bottom-a`) or in YOOtheme Pro as a **Module Element**.
+6. In module options:
+   - keep **Categories** empty to show comments in all article categories
+   - choose **Rendering Mode**:
+     - `Standard / Neutral` for plain Joomla templates
+     - `YOOtheme / UIkit` for UIkit-based output
 
 ---
 
 ## Usage
 
 ### Via module (recommended)
-The module is fully YOOtheme-compatible.
+Display the **mod_r3dcomments** module on article pages via normal Joomla module assignment.
+The module works without YOOtheme and can optionally render in a YOOtheme/UIkit style.
 
-Simply display the **mod_r3dcomments** module on article pages.
-
-### Via content plugin (optional)
-Automatically display comments under articles based on:
-
-- Categories
-- Tags
-- Shortcode `{r3dcomments}`
+### Current scope
+- Primary context: `com_content` article detail pages.
+- Category filtering is optional. If no category is selected in module options, all article categories are allowed.
 
 ---
 
@@ -102,6 +99,19 @@ pkg_r3dcomments/
 └── 05_updates/ # Update feed generator
 
 The folders `02_build` and `05_updates` are excluded for security reasons.
+
+---
+
+## Troubleshooting
+
+- Module shows nothing on frontend:
+  - Ensure you are on a `com_content` article detail page.
+  - Check module assignment (`Menu Assignment` + published status).
+  - If category filter is active, ensure the current article category is included.
+- Style looks broken on non-UIkit template:
+  - Set module `Rendering Mode` to `Standard / Neutral`.
+- Strings appear as language keys:
+  - Reinstall the latest package ZIP and clear Joomla cache (`System -> Clear Cache`).
 
 ---
 
