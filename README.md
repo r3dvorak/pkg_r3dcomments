@@ -16,6 +16,7 @@ Ideal for websites that need simple, clear, and GDPR-friendly comments.
 ## Features
 
 - **Joomla 5 & Joomla 6 compatible**
+- **Language packs included**: `en-GB`, `de-DE`, `el-GR`
 - **Two levels** (comment + reply)
 - **Quote**: Selected comment text is automatically copied
 - **Category filter** (comments only in defined categories)
@@ -112,6 +113,7 @@ The folders `02_build` and `05_updates` are excluded for security reasons.
   - Set module `Rendering Mode` to `Standard / Neutral`.
 - Strings appear as language keys:
   - Reinstall the latest package ZIP and clear Joomla cache (`System -> Clear Cache`).
+  - Check that your site language has installed files for this extension (`en-GB`, `de-DE`, `el-GR`).
 
 ---
 
